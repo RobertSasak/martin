@@ -29,6 +29,7 @@
         <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/tabs.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -253,7 +254,7 @@
 This guide covers IDE setup and debugging.
 While we use Visual Studio Code as an example, Martin can be developed with any editor that supports Rust.</p>
 <details>
-<summary>Editor-specifc Guides (click to expand)</summary>
+<summary>Editor-specific Guides (click to expand)</summary>
 <h3 id="visual-studio-code"><a class="header" href="#visual-studio-code">Visual Studio Code</a></h3>
 <p>Install these essential extensions:</p>
 <ul>
@@ -290,7 +291,7 @@ just help   # shows common commands
 <h2 id="generate"><a class="header" href="#generate">Generate</a></h2>
 <p>Press <code>F1</code> on your keyboard, and input “Generate Launch Configurations from Cargo.toml”. Execute it and save it to your <code>.vscode</code> directory.</p>
 <h2 id="modify"><a class="header" href="#modify">Modify</a></h2>
-<p>Let’s say you want to debugging Martin with this command:</p>
+<p>Let’s say you want to debug Martin with this command:</p>
 <pre><code class="language-shell">martin postgres://postgres:postgres@localhost:5411/db
 </code></pre>
 <p>You could find <code>Debug executable 'martin'</code> in your <code>launch.json</code>, like below:</p>
@@ -399,6 +400,7 @@ async fn start(args: Args) -&gt; MartinResult&lt;()&gt; {
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/tabs.js"></script>
 
 
 

@@ -29,6 +29,7 @@
         <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/tabs.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -258,14 +259,14 @@ passing <code>DATABASE_URL</code> or specifying the .mbtiles/.pmtiles files or U
 
 docker run -p 3000:3000 \
            -e PGPASSWORD \
-           -e DATABASE_URL=postgresql://user@host:port/db \
+           -e DATABASE_URL=postgres://user@host:port/db \
            -v /path/to/config/dir:/config \
            ghcr.io/maplibre/martin --config /config/config.yaml
 </code></pre>
 <h3 id="from-binary-distributions-manually"><a class="header" href="#from-binary-distributions-manually">From Binary Distributions Manually</a></h3>
 <p>You can download martin from <a href="https://github.com/maplibre/martin/releases">GitHub releases page</a>.</p>
 <div class="table-wrapper"><table><thead><tr><th>Platform</th><th>x64</th><th>ARM-64</th></tr></thead><tbody>
-<tr><td>Linux</td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-x86_64-unknown-linux-gnu.tar.gz">.tar.gz</a> (gnu)<br><a href="https://github.com/maplibre/martin/releases/latest/download/martin-x86_64-unknown-linux-musl.tar.gz">.tar.gz</a> (musl)<br><a href="https://github.com/maplibre/martin/releases/latest/download/martin-Debian-x86_64.deb">.deb</a></td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-aarch64-unknown-linux-musl.tar.gz">.tar.gz</a> (musl)</td></tr>
+<tr><td>Linux</td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-x86_64-unknown-linux-gnu.tar.gz">.tar.gz</a> (gnu)<br><a href="https://github.com/maplibre/martin/releases/latest/download/martin-x86_64-unknown-linux-musl.tar.gz">.tar.gz</a> (musl)<br><a href="https://github.com/maplibre/martin/releases/latest/download/martin-Debian-x86_64.deb">.deb</a></td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-aarch64-unknown-linux-gnu.tar.gz">.tar.gz</a> (gnu)<br><a href="https://github.com/maplibre/martin/releases/latest/download/martin-aarch64-unknown-linux-musl.tar.gz">.tar.gz</a> (musl)</td></tr>
 <tr><td>macOS</td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-x86_64-apple-darwin.tar.gz">.tar.gz</a></td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-aarch64-apple-darwin.tar.gz">.tar.gz</a></td></tr>
 <tr><td>Windows</td><td><a href="https://github.com/maplibre/martin/releases/latest/download/martin-x86_64-pc-windows-msvc.zip">.zip</a></td><td></td></tr>
 </tbody></table>
@@ -343,6 +344,7 @@ martin --help
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/tabs.js"></script>
 
 
 

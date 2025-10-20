@@ -29,6 +29,7 @@
         <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/tabs.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -254,12 +255,12 @@ controlled via the <code>RUST_LOG</code> environment variable. The value of this
 logging directives.</p>
 <p>This will enable debug logging for all modules:</p>
 <pre><code class="language-bash">export RUST_LOG=debug
-martin postgresql://postgres@localhost/db
+martin postgres://postgres@localhost/db
 </code></pre>
 <p>While this will only enable verbose logging for the <code>actix_web</code> module and enable debug logging for the <code>martin</code>
 and <code>tokio_postgres</code> modules:</p>
 <pre><code class="language-bash">export RUST_LOG=actix_web=info,martin=debug,tokio_postgres=debug
-martin postgresql://postgres@localhost/db
+martin postgres://postgres@localhost/db
 </code></pre>
 
                     </main>
@@ -308,6 +309,7 @@ martin postgresql://postgres@localhost/db
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/tabs.js"></script>
 
 
 

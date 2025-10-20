@@ -29,6 +29,7 @@
         <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/tabs.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -256,7 +257,7 @@ We try to provide a guide for each provider, but we may not cover all of them.</
 <p>First, you need to download the CA certificate and get your cluster connection string from the <a href="https://cloud.digitalocean.com/databases">dashboard</a>.
 After that, you can use the connection string and the CA certificate to connect to the database</p>
 <pre><code class="language-bash">martin --ca-root-file ./ca-certificate.crt \
-       postgresql://user:password@host:port/db?sslmode=require
+       postgres://user:password@host:port/db?sslmode=require
 </code></pre>
 <h2 id="using-with-heroku-postgresql"><a class="header" href="#using-with-heroku-postgresql">Using with Heroku PostgreSQL</a></h2>
 <p>You can use Martin with <a href="https://www.heroku.com/postgres">Managed PostgreSQL from Heroku</a> with the PostGIS extension</p>
@@ -320,6 +321,7 @@ martin
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/tabs.js"></script>
 
 
 

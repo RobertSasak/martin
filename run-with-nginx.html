@@ -29,6 +29,7 @@
         <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/tabs.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -268,7 +269,7 @@ services:
     image: maplibre/martin:v0.7.0
     restart: unless-stopped
     environment:
-      - DATABASE_URL=postgresql://postgres:password@db/db
+      - DATABASE_URL=postgres://postgres:password@db/db
     depends_on:
       - db
 
@@ -376,6 +377,7 @@ services:
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="theme/tabs.js"></script>
 
 
 
